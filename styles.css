@@ -1,0 +1,172 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #F8E8EE; /* Rosa pastel claro */
+    color: #5A5A5A;
+}
+
+/* Encabezado */
+header {
+    background-color: #F3D7CA; /* Melocotón pastel */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #A75D5D; /* Rojo suave */
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #D3756B; /* Coral pastel */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #A75D5D; /* Rojo suave */
+}
+
+/* Secciones */
+section {
+    padding: 30px;
+    margin: 20px;
+    background-color: #FDF4F5; /* Rosa muy pálido */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #A75D5D; /* Rojo suave */
+    border-bottom: 2px solid #E5C3D1; /* Lila pastel */
+    padding-bottom: 10px;
+}
+
+/* Imágenes individuales */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #E5C3D1; /* Lila pastel */
+}
+
+/* Estilos para la galería de fotos */
+.galeria-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.galeria-item {
+    flex: 0 0 auto;
+    width: calc(25% - 15px);
+    min-width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.galeria-item:hover {
+    transform: scale(1.05);
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 0 10px 0;
+    border: 3px solid #E5C3D1; /* Lila pastel */
+}
+
+.galeria-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #A75D5D; /* Rojo suave */
+}
+
+.imgprincipal img {
+
+    height: 330px;
+
+}
+
+/* Listas */
+ul, ol {
+    background-color: #FFDFDF; /* Rosa pastel */
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Enlaces */
+a {
+    color: #7A9D54; /* Verde pastel */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #557A46; /* Verde más oscuro */
+}
+
+/* Elementos destacados */
+.destacado {
+    background-color: #D7E5CA; /* Verde menta pastel */
+    padding: 2px 5px;
+    font-weight: bold;
+    border-radius: 3px;
+    color: #557A46; /* Verde más oscuro */
+}
+
+strong {
+    color: #A75D5D; /* Rojo suave */
+}
+
+em {
+    color: #7A9D54; /* Verde pastel */
+}
+
+/* Pie de página */
+footer {
+    background-color: #F3D7CA; /* Melocotón pastel */
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    color: #5A5A5A;
+}
+
+/* Respnsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .galeria-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .galeria-item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
